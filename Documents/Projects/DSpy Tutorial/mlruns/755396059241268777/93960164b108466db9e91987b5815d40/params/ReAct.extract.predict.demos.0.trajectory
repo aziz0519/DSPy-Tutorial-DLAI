@@ -1,0 +1,25 @@
+[[ ## thought_0 ## ]]
+I need to find out what material the designer of the Holy Trinity Church pioneered in church building. This likely involves looking up information about the church and its architect.
+
+[[ ## tool_name_0 ## ]]
+search_wikipedia
+
+[[ ## tool_args_0 ## ]]
+{"query": "Holy Trinity Church designer material pioneered in church building"}
+
+[[ ## observation_0 ## ]]
+[1] «Holy Trinity Platt Church | Holy Trinity Platt Church (also known as Holy Trinity Church, Rusholme), is in Platt Fields Park in Rusholme, Manchester, England. It is an active Anglican parish church in the deanery of Hulme, the archdeaconry of Manchester, and the diocese of Manchester. The church is recorded in the National Heritage List for England as a designated Grade II* listed building. It is the second "pot church" designed by Edmund Sharpe, so-called because the main building material used in the construction of the church is terracotta.»
+[2] «Holy Trinity, Hulme | Holy Trinity was an Anglican parish church built in Hulme, Manchester in 1841 to a design by George Gilbert Scott and S. Moffat. Construction cost around £18,000 and was funded by Eleanora Atherton, the granddaughter of Edward Byrom, who had himself founded St John's Church, Manchester.»
+[3] «William Etty (architect) | William Etty (c. 1675 – 1734) was an English architect and craftsman, best known for designing Holy Trinity Church, Leeds and (probably) Holy Trinity Church, Sunderland.»
+
+[[ ## thought_1 ## ]]
+I found that the Holy Trinity Church in Rusholme was designed by Edmund Sharpe, who pioneered the use of terracotta as the main building material. I need to confirm this information and ensure it is accurate before finishing.
+
+[[ ## tool_name_1 ## ]]
+finish
+
+[[ ## tool_args_1 ## ]]
+{}
+
+[[ ## observation_1 ## ]]
+Completed.

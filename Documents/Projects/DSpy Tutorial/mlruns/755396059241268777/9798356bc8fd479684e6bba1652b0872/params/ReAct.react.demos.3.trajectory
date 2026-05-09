@@ -1,0 +1,13 @@
+[[ ## thought_0 ## ]]
+I need to find the name of the school located near the Brea mall that is owned by Simon Property Group. This information might be available on Wikipedia or other reliable sources. I will search for it to gather the necessary details.
+
+[[ ## tool_name_0 ## ]]
+search_wikipedia
+
+[[ ## tool_args_0 ## ]]
+{"query": "school near Brea mall owned by Simon Property Group"}
+
+[[ ## observation_0 ## ]]
+[1] «Brea Mall | The Brea Mall is a shopping mall located in the Orange County city of Brea, California. Since 1998 the mall has been owned and operated by the Simon Property Group. It is home to four major department stores, over 175 specialty shops and boutiques, and a food court. It is approximately 1,310,000 square feet (1.31 million).»
+[2] «Briarwood Mall | Briarwood Mall is a shopping mall in Ann Arbor, Michigan, United States. The mall's four anchor stores are Macy's, JCPenney, Sears, and Von Maur. Surrounded by office and other development, the mall anchors the southern Ann Arbor commercial area around Eisenhower Boulevard and I-94. It serves as the primary shopping mall for all of Washtenaw County. Simon Property Group currently manages and co-owns the mall (Simon owns 50%). Briarwood is considered a Class A mall property by developers based on its sales per square foot. Many restaurants, hotels and stores surround the mall.»
+[3] «Mall at The Source | The Mall at the Source (also known as The Source Mall or simply The Source) is a shopping mall located in Westbury, New York, United States, on Old Country Road and Merchants Concourse (Ellison Avenue), currently managed by Newmark Grubb Knight Frank and owned by lenders. Until August 2012, the mall was managed and co-owned by Simon Property Group. Its last stores included an Old Navy, an H&M, and a David's Bridal. It currently only has a couple upscale restaurants — The Cheesecake Factory and P. F. Chang's China Bistro — a Dave & Buster's, a Lord and Taylor outlet, a Fortunoff's outdoor furniture outlet, a Gymboree Play & Music, a few discount retailers, an rescue animal shelter, and small standalone kiosks. The mall was named for its former anchor store Fortunoff (which used the phrase "The Source" in advertising for the chain), which the mall was built around and which closed in June 2009.»

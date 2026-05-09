@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/755396059241268777/5be5a706350e4e479a901d98d1cb0a17/artifacts
+end_time: 1778301723149
+entry_point_name: ''
+experiment_id: '755396059241268777'
+lifecycle_stage: active
+run_id: 5be5a706350e4e479a901d98d1cb0a17
+run_name: eval_minibatch_5
+run_uuid: 5be5a706350e4e479a901d98d1cb0a17
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778301718211
+status: 3
+tags: []
+user_id: aziz_

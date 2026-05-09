@@ -1,0 +1,13 @@
+[[ ## thought_0 ## ]]
+I need to find out which romantic drama dance film from 1987 is parodied by "Totally Awesome." This will likely involve looking up the film and its director.
+
+[[ ## tool_name_0 ## ]]
+search_wikipedia
+
+[[ ## tool_args_0 ## ]]
+{"query": "1987 romantic drama dance film parodied by Totally Awesome"}
+
+[[ ## observation_0 ## ]]
+[1] «Dirty Dancing | Dirty Dancing is a 1987 American romantic drama dance film written by Eleanor Bergstein, directed by Emile Ardolino and starring Patrick Swayze and Jennifer Grey in the lead roles, and featuring Cynthia Rhodes and Jerry Orbach.»
+[2] «Dance Dance (film) | Dance Dance (Hindi: डांस डांस ) is an Indian Bollywood movie released on 29 May 1987, directed and produced by Babbar Subhash. The film is a musical and stars Mithun Chakraborty, Smita Patil and Mandakini in lead roles. It also stars Amrish Puri, Shakti Kapoor and Om Shivpuri in supporting roles. It is about brother and sister, who try to find success and become big singers.»
+[3] «Dance Raja Dance | Dance Raja Dance (Kannada: ಡಾನ್ಸ್ ರಾಜ ಡಾನ್ಸ್ ) is a 1987 Kannada dance film directed and produced by Dwarakish for his Dwarakish Chitra banner. The film starred newcomers Vinod Raj, Divya and Sangeetha in lead roles.»

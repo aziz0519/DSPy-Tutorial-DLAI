@@ -1,0 +1,117 @@
+{
+  "react": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Konnichiwa was launched in a broadcast that was streamed by the platform that was founded in what city in 2010?",
+        "trajectory": "[[ ## thought_0 ## ]]\nI need to find out which platform was founded in 2010 and in which city. This information will help me answer the question about the broadcast of Konnichiwa. I will search for platforms that were established in 2010 to identify the correct one.\n\n[[ ## tool_name_0 ## ]]\nsearch_wikipedia\n\n[[ ## tool_args_0 ## ]]\n{\"query\": \"platform founded in 2010\"}\n\n[[ ## observation_0 ## ]]\n[1] \u00abGenius Crowds | Genius Crowds was a crowdsourcing platform founded in 2010 on the principles of collaboration and sharing. It served as a platform for everyday people \u2013 students, women, men, moms, dads, DIY'ers, cooks, and tinkerers - who have a product idea that they don't know how to bring to market.\u00bb\n[2] \u00abSeedups | SeedUps is an equity crowdfunding platform for seed investment to launch and focuses on startup companies. It was founded by Michael Faulkner and Gavin Gallagher in 2010 and is aimed at tech startups in the USA, Ireland and the UK. Since launch over 2200 tech businesses have registered. It is only available to accredited or sophisticated investors. The platform is headquartered in Republic of Ireland with offices in the UK, US and Canada. Each funding project on SeedUps lasts for the same duration, namely 180 days.\u00bb\n[3] \u00abSponsume | Sponsume was an online multicurrency crowd funding platform founded by French entrepreneur Gregory Vincent in 2010. Its headquarters are in London, United Kingdom.\u00bb\n\n[[ ## thought_1 ## ]]\nI found several platforms founded in 2010, including Seedups and Sponsume. Seedups is headquartered in the Republic of Ireland, while Sponsume is based in London, UK. I need to determine which of these platforms is related to the broadcast of Konnichiwa. I will search for more specific information about Konnichiwa to see if it is linked to either of these platforms.\n\n[[ ## tool_name_1 ## ]]\nsearch_wikipedia\n\n[[ ## tool_args_1 ## ]]\n{\"query\": \"Konnichiwa broadcast platform\"}\n\n[[ ## observation_1 ## ]]\n[1] \u00abKonnichiwa (Skepta album) | Konnichiwa is the fourth studio album by British grime artist Skepta. After numerous delays, it was released on 6 May 2016 by Boy Better Know. The album was launched with a party in Tokyo on 5 May 2016 arranged and broadcast globally by live streaming platform Boiler Room, featuring Skepta performing the whole album live with supporting performances from Japanese artists Kohh, Dutch Montana, Loota, and DJ Riki.\u00bb\n[2] \u00abKonnichiwa (Youmou &amp; Ohana album) | Konnichiwa (Japanese: \u3053\u3093\u306b\u3061\u306f\u3002) is a 2008 album by Youmou & Ohana. The first track, \"Falling\", features the music of Corinne Bailey Rae.\u00bb\n[3] \u00abKonnichiwa (The Superions song) | \"Konnichiwa\" is the seventh single by The Superions, a side project of Fred Schneider of The B-52s. The single was released to iTunes Stores as a digital download on May 12, 2014 and is the first single to be released from a collection titled \"The Vertical Mind\".\u00bb\n\n[[ ## thought_2 ## ]]\nI found that the Konnichiwa broadcast was linked to the live streaming platform Boiler Room. However, I need to confirm the founding details of Boiler Room to see if it was established in 2010 and in which city. I will search for information about Boiler Room's founding.\n\n[[ ## tool_name_2 ## ]]\nsearch_wikipedia\n\n[[ ## tool_args_2 ## ]]\n{\"query\": \"Boiler Room founding details\"}\n\n[[ ## observation_2 ## ]]\n[1] \u00abBoiler Room (music project) | Boiler Room is a global online music broadcasting platform commissioning and streaming live music sessions around the world. Founded in London, England in 2010, Boiler Room has now hosted shows in around 100 cities worldwide, from Stockholm to Shanghai. They have regular operations in London, New York City, Berlin, Mexico City, Sydney, S\u00e3o Paulo, Tokyo, Krak\u00f3w, and Los Angeles and produce an average of 30\u201335 new shows each month. Their music programming originally focused on electronic music such as garage, house, techno, dub but quickly expanded to include additional genres, including grime, hip hop, classical, and jazz.\u00bb\n[2] \u00abBoiler Room (band) | Boiler Room was a nu metal band who formed in 1996. The band, featuring vocalist Chris Lino, guitarist Rob Caggiano, bassist James Meselsohn, and drummer Mike Meselsohn toured through their local club scene for several years, building up their material and performance skills. The band broke through on local radio following an opening slot for Orgy in 1999. Original guitarist Joey Barracato played on their first self-titled 1996 CD and played the first couple years of gigs, opening for bands such as Type O Negative, Life of Agony, and Korn.\u00bb\n[3] \u00abJoakim Borda-Pedreira | Joakim Borda (born Joakim Waskar Borda-Pedreira 1977 in Malm\u00f6) is a Swedish-Bolivian art historian, art critic and curator. He has been Art Editor of Plaza Magazine (2007-2011) and is the Founding Director of The Boiler Room Gallery in Oslo. Between 2012-2015 he was Head Curator of The Arts Festival of North Norway. Borda is grandson of the Bolivian poet and politician Hector Borda Lea\u00f1o.\u00bb",
+        "next_thought": "I have confirmed that Boiler Room was founded in London, England in 2010. Since Konnichiwa was launched with a party arranged and broadcast globally by Boiler Room, I now have all the information needed to answer the question.",
+        "next_tool_name": "finish",
+        "next_tool_args": {}
+      },
+      {
+        "question": "In addition to Ryan Gosling, Angourie Rice and the actor born on October 11, 1977, who else starred in The Nice Guys?",
+        "answer": "Russell Crowe"
+      },
+      {
+        "question": "Which publication has been published by a greater number of groups, House Beautiful or Smithsonian?",
+        "answer": "House Beautiful"
+      },
+      {
+        "question": "In what year was the creator of the character that appeared in a series of films directed by Stephen Norrington, Guillermo del Toro and Goyer born?",
+        "answer": "1926"
+      }
+    ],
+    "signature": {
+      "instructions": "You are a knowledgeable trivia agent. Given the fields `question`, produce the fields `answer`. In each episode, you will receive the `question` as input along with a `trajectory` that tracks your previous thoughts and tool calls. Your goal is to utilize the supplied tools to gather necessary information for producing the `answer`. \n\nInterleave your reasoning in `next_thought`, select the appropriate `next_tool_name` (either `search_wikipedia` to gather more information or `finish` to complete the task), and provide the necessary `next_tool_args`. After each tool call, append the resulting observation to your trajectory. \n\nReason about the current situation and plan your next steps as you work through the task. The tools available to you are:\n(1) `search_wikipedia`, which takes arguments {'query': {'type': 'string'}} in JSON format.\n(2) `finish`, which signals that all information for producing the outputs, i.e. `answer`, is now available.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Trajectory:",
+          "description": "${trajectory}"
+        },
+        {
+          "prefix": "Next Thought:",
+          "description": "${next_thought}"
+        },
+        {
+          "prefix": "Next Tool Name:",
+          "description": "${next_tool_name}"
+        },
+        {
+          "prefix": "Next Tool Args:",
+          "description": "${next_tool_args}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "extract.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "The designer of the Holy Trinity Church pioneered the use of what material in church building?",
+        "trajectory": "[[ ## thought_0 ## ]]\nI need to find out what material the designer of the Holy Trinity Church pioneered in church building. This likely involves looking up information about the church and its architect.\n\n[[ ## tool_name_0 ## ]]\nsearch_wikipedia\n\n[[ ## tool_args_0 ## ]]\n{\"query\": \"Holy Trinity Church designer material pioneered in church building\"}\n\n[[ ## observation_0 ## ]]\n[1] \u00abHoly Trinity Platt Church | Holy Trinity Platt Church (also known as Holy Trinity Church, Rusholme), is in Platt Fields Park in Rusholme, Manchester, England. It is an active Anglican parish church in the deanery of Hulme, the archdeaconry of Manchester, and the diocese of Manchester. The church is recorded in the National Heritage List for England as a designated Grade II* listed building. It is the second \"pot church\" designed by Edmund Sharpe, so-called because the main building material used in the construction of the church is terracotta.\u00bb\n[2] \u00abHoly Trinity, Hulme | Holy Trinity was an Anglican parish church built in Hulme, Manchester in 1841 to a design by George Gilbert Scott and S. Moffat. Construction cost around \u00a318,000 and was funded by Eleanora Atherton, the granddaughter of Edward Byrom, who had himself founded St John's Church, Manchester.\u00bb\n[3] \u00abWilliam Etty (architect) | William Etty (c. 1675 \u2013 1734) was an English architect and craftsman, best known for designing Holy Trinity Church, Leeds and (probably) Holy Trinity Church, Sunderland.\u00bb\n\n[[ ## thought_1 ## ]]\nI found that the Holy Trinity Church in Rusholme was designed by Edmund Sharpe, who pioneered the use of terracotta as the main building material. I need to confirm this information and ensure it is accurate before finishing.\n\n[[ ## tool_name_1 ## ]]\nfinish\n\n[[ ## tool_args_1 ## ]]\n{}\n\n[[ ## observation_1 ## ]]\nCompleted.",
+        "reasoning": "The designer of the Holy Trinity Church in Rusholme, Edmund Sharpe, is noted for pioneering the use of terracotta as the main building material in church construction. This information was confirmed through a search that highlighted his innovative approach to using terracotta in the design of the church.",
+        "answer": "Terracotta"
+      },
+      {
+        "augmented": true,
+        "question": "Who directed the 1987 romantic drama dance film that is directly parodied by the television film \"Totally Awesome\"?",
+        "trajectory": "[[ ## thought_0 ## ]]\nI need to find out which romantic drama dance film from 1987 is parodied by \"Totally Awesome.\" This will likely involve looking up the film and its director.\n\n[[ ## tool_name_0 ## ]]\nsearch_wikipedia\n\n[[ ## tool_args_0 ## ]]\n{\"query\": \"1987 romantic drama dance film parodied by Totally Awesome\"}\n\n[[ ## observation_0 ## ]]\n[1] \u00abDirty Dancing | Dirty Dancing is a 1987 American romantic drama dance film written by Eleanor Bergstein, directed by Emile Ardolino and starring Patrick Swayze and Jennifer Grey in the lead roles, and featuring Cynthia Rhodes and Jerry Orbach.\u00bb\n[2] \u00abDance Dance (film) | Dance Dance (Hindi: \u0921\u093e\u0902\u0938 \u0921\u093e\u0902\u0938 ) is an Indian Bollywood movie released on 29 May 1987, directed and produced by Babbar Subhash. The film is a musical and stars Mithun Chakraborty, Smita Patil and Mandakini in lead roles. It also stars Amrish Puri, Shakti Kapoor and Om Shivpuri in supporting roles. It is about brother and sister, who try to find success and become big singers.\u00bb\n[3] \u00abDance Raja Dance | Dance Raja Dance (Kannada: \u0ca1\u0cbe\u0ca8\u0ccd\u0cb8\u0ccd \u0cb0\u0cbe\u0c9c \u0ca1\u0cbe\u0ca8\u0ccd\u0cb8\u0ccd ) is a 1987 Kannada dance film directed and produced by Dwarakish for his Dwarakish Chitra banner. The film starred newcomers Vinod Raj, Divya and Sangeetha in lead roles.\u00bb\n\n[[ ## thought_1 ## ]]\nThe observation indicates that the film \"Dirty Dancing\" is the 1987 romantic drama dance film that is parodied by \"Totally Awesome.\" It was directed by Emile Ardolino. I now have enough information to complete the task.\n\n[[ ## tool_name_1 ## ]]\nfinish\n\n[[ ## tool_args_1 ## ]]\n{}\n\n[[ ## observation_1 ## ]]\nCompleted.",
+        "reasoning": "The 1987 romantic drama dance film that is parodied by \"Totally Awesome\" is \"Dirty Dancing.\" This film was directed by Emile Ardolino, which provides the answer to the question.",
+        "answer": "Emile Ardolino"
+      },
+      {
+        "augmented": true,
+        "question": "Who has more letters in their middle name out of Margaret Laurence and Paul Heyse?",
+        "trajectory": "[[ ## thought_0 ## ]]\nI need to find out the middle names of both Margaret Laurence and Paul Heyse to compare the number of letters in each. I will start by searching for information about Margaret Laurence's full name and then look for Paul Heyse's full name.\n\n[[ ## tool_name_0 ## ]]\nsearch_wikipedia\n\n[[ ## tool_args_0 ## ]]\n{\"query\": \"Margaret Laurence full name\"}\n\n[[ ## observation_0 ## ]]\n[1] \u00abMargaret Laurence | Jean Margaret Laurence, CC (n\u00e9e Wemyss) (18 July 1926 \u2013 5 January 1987) was a Canadian novelist and short story writer, and is one of the major figures in Canadian literature. She was also a founder of the Writers' Trust of Canada, a non-profit literary organization that seeks to encourage Canada's writing community.\u00bb\n[2] \u00abMargaret Laurence (disambiguation) | Margaret Laurence is a Canadian author.\u00bb\n[3] \u00abMargaret Laurence (actress) | Margaret Laurence is an Australian actress, best known for several soap opera roles.\u00bb\n\n[[ ## thought_1 ## ]]\nI found that Margaret Laurence's full name is Jean Margaret Laurence. Now I need to find the full name of Paul Heyse to determine his middle name and compare the number of letters in their middle names.\n\n[[ ## tool_name_1 ## ]]\nsearch_wikipedia\n\n[[ ## tool_args_1 ## ]]\n{\"query\": \"Paul Heyse full name\"}\n\n[[ ## observation_1 ## ]]\n[1] \u00abPaul Heyse | Paul Johann Ludwig von Heyse (15 March 1830 \u2013 2 April 1914) was a distinguished German writer and translator. A member of two important literary societies, the \"Tunnel \u00fcber der Spree\" in Berlin and \"Die Krokodile\" in Munich, he wrote novels, poetry, 177 short stories, and about sixty dramas. The sum of Heyse's many and varied productions made him a dominant figure among German men of letters. He was awarded the Nobel Prize for Literature in 1910 \"as a tribute to the consummate artistry, permeated with idealism, which he has demonstrated during his long productive career as a lyric poet, dramatist, novelist and writer of world-renowned short stories.\" Wirsen, one of the Nobel judges, said that \"Germany has not had a greater literary genius since Goethe.\" Heyse is the fifth oldest laureate in literature, after Doris Lessing, Theodor Mommsen, Alice Munro and Jaroslav Seifert.\u00bb\n[2] \u00abKarl Wilhelm Ludwig Heyse | Karl Wilhelm Ludwig Heyse (15 October 1797 in Oldenburg \u2013 25 November 1855 in Berlin) was a German philologist, son of Johann Christian August Heyse, father of the novelist Paul Johann Ludwig von Heyse, born at Oldenburg.\u00bb\n[3] \u00abPaul Heyne | Paul T. Heyne (2 November 1931 \u2013 9 March 2000) was a lecturer in economics for nearly a quarter century at the University of Washington in Seattle, United States.\u00bb\n\n[[ ## thought_2 ## ]]\nI found that Paul Heyse's full name is Paul Johann Ludwig von Heyse. Now I can compare the middle names: \"Margaret\" has 8 letters and \"Johann\" has 6 letters. Therefore, Margaret Laurence has more letters in her middle name than Paul Heyse.\n\n[[ ## tool_name_2 ## ]]\nfinish\n\n[[ ## tool_args_2 ## ]]\n{}\n\n[[ ## observation_2 ## ]]\nCompleted.",
+        "reasoning": "Margaret Laurence's full name is Jean Margaret Laurence, where \"Margaret\" has 8 letters. Paul Heyse's full name is Paul Johann Ludwig von Heyse, where \"Johann\" has 6 letters. Therefore, Margaret Laurence has more letters in her middle name than Paul Heyse.",
+        "answer": "Margaret Laurence"
+      },
+      {
+        "augmented": true,
+        "question": "Is Liverpool found in northern or southern England?",
+        "trajectory": "[[ ## thought_0 ## ]]\nI need to determine whether Liverpool is located in northern or southern England. I can search for this information to ensure accuracy.\n\n[[ ## tool_name_0 ## ]]\nsearch_wikipedia\n\n[[ ## tool_args_0 ## ]]\n{\"query\": \"Liverpool location northern or southern England\"}\n\n[[ ## observation_0 ## ]]\n[1] \u00abLiverpool | Liverpool ( ) is a city in North West England, with an estimated population of 478,580 in 2015. With its surrounding areas, it is the fifth-largest metropolitan area in the UK, with over 2.24 million people in 2011. The local authority is Liverpool City Council, the most populous local government district within the metropolitan county of Merseyside and the largest within the Liverpool City Region.\u00bb\n[2] \u00abLiverpool (disambiguation) | Liverpool is a city in Merseyside, England.\u00bb\n[3] \u00abLiverpool\u2013Manchester lines | There were once four direct railway routes between Liverpool and Manchester in the North West of England. There are now only two remaining direct railway routes between the two cities. One line, the now northern route, is fully electric and the other, the southern route, is a diesel only line. A third line which is further north has been split with the western section electric and the eastern section diesel operation, requiring a passenger change between the two cities. The fourth route, the most southerly, is largely abandoned east of Warrington with the remaining section mostly catering for freight trains. The remaining two direct routes are:\u00bb\n\n[[ ## thought_1 ## ]]\nLiverpool is located in North West England, which indicates that it is in northern England. I have the information I need to answer the question.\n\n[[ ## tool_name_1 ## ]]\nfinish\n\n[[ ## tool_args_1 ## ]]\n{}\n\n[[ ## observation_1 ## ]]\nCompleted.",
+        "reasoning": "Liverpool is located in North West England, which categorizes it as part of northern England. The information gathered confirms that Liverpool is not in southern England.",
+        "answer": "Northern England"
+      }
+    ],
+    "signature": {
+      "instructions": "Given a factual question, utilize the `Predict` module to analyze the provided `trajectory` of previous interactions. Your task is to synthesize the information gathered from external sources, particularly Wikipedia, and articulate a step-by-step reasoning process that leads to a well-founded and coherent final answer. Ensure that your response addresses the question directly, incorporating relevant details from the observations made during the information retrieval process.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Trajectory:",
+          "description": "${trajectory}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.13",
+      "dspy": "2.6.23",
+      "cloudpickle": "3.1"
+    }
+  }
+}

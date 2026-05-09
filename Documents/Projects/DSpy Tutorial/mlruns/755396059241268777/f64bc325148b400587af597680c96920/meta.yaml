@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/755396059241268777/f64bc325148b400587af597680c96920/artifacts
+end_time: 1778301846998
+entry_point_name: ''
+experiment_id: '755396059241268777'
+lifecycle_stage: active
+run_id: f64bc325148b400587af597680c96920
+run_name: spiffy-roo-992
+run_uuid: f64bc325148b400587af597680c96920
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778301636065
+status: 3
+tags: []
+user_id: aziz_

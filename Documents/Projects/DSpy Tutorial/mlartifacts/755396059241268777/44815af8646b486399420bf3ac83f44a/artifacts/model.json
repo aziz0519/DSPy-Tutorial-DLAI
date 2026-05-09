@@ -1,0 +1,88 @@
+{
+  "react": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Konnichiwa was launched in a broadcast that was streamed by the platform that was founded in what city in 2010?",
+        "trajectory": "[[ ## thought_0 ## ]]\nI need to find out which platform was founded in 2010 and in which city. This information will help me answer the question about the broadcast of Konnichiwa. I will search for platforms that were established in 2010 to identify the correct one.\n\n[[ ## tool_name_0 ## ]]\nsearch_wikipedia\n\n[[ ## tool_args_0 ## ]]\n{\"query\": \"platform founded in 2010\"}\n\n[[ ## observation_0 ## ]]\n[1] \u00abGenius Crowds | Genius Crowds was a crowdsourcing platform founded in 2010 on the principles of collaboration and sharing. It served as a platform for everyday people \u2013 students, women, men, moms, dads, DIY'ers, cooks, and tinkerers - who have a product idea that they don't know how to bring to market.\u00bb\n[2] \u00abSeedups | SeedUps is an equity crowdfunding platform for seed investment to launch and focuses on startup companies. It was founded by Michael Faulkner and Gavin Gallagher in 2010 and is aimed at tech startups in the USA, Ireland and the UK. Since launch over 2200 tech businesses have registered. It is only available to accredited or sophisticated investors. The platform is headquartered in Republic of Ireland with offices in the UK, US and Canada. Each funding project on SeedUps lasts for the same duration, namely 180 days.\u00bb\n[3] \u00abSponsume | Sponsume was an online multicurrency crowd funding platform founded by French entrepreneur Gregory Vincent in 2010. Its headquarters are in London, United Kingdom.\u00bb\n\n[[ ## thought_1 ## ]]\nI found several platforms founded in 2010, including Seedups and Sponsume. Seedups is headquartered in the Republic of Ireland, while Sponsume is based in London, UK. I need to determine which of these platforms is related to the broadcast of Konnichiwa. I will search for more specific information about Konnichiwa to see if it is linked to either of these platforms.\n\n[[ ## tool_name_1 ## ]]\nsearch_wikipedia\n\n[[ ## tool_args_1 ## ]]\n{\"query\": \"Konnichiwa broadcast platform\"}\n\n[[ ## observation_1 ## ]]\n[1] \u00abKonnichiwa (Skepta album) | Konnichiwa is the fourth studio album by British grime artist Skepta. After numerous delays, it was released on 6 May 2016 by Boy Better Know. The album was launched with a party in Tokyo on 5 May 2016 arranged and broadcast globally by live streaming platform Boiler Room, featuring Skepta performing the whole album live with supporting performances from Japanese artists Kohh, Dutch Montana, Loota, and DJ Riki.\u00bb\n[2] \u00abKonnichiwa (Youmou &amp; Ohana album) | Konnichiwa (Japanese: \u3053\u3093\u306b\u3061\u306f\u3002) is a 2008 album by Youmou & Ohana. The first track, \"Falling\", features the music of Corinne Bailey Rae.\u00bb\n[3] \u00abKonnichiwa (The Superions song) | \"Konnichiwa\" is the seventh single by The Superions, a side project of Fred Schneider of The B-52s. The single was released to iTunes Stores as a digital download on May 12, 2014 and is the first single to be released from a collection titled \"The Vertical Mind\".\u00bb\n\n[[ ## thought_2 ## ]]\nI found that the Konnichiwa broadcast was linked to the live streaming platform Boiler Room. However, I need to confirm the founding details of Boiler Room to see if it was established in 2010 and in which city. I will search for information about Boiler Room's founding.\n\n[[ ## tool_name_2 ## ]]\nsearch_wikipedia\n\n[[ ## tool_args_2 ## ]]\n{\"query\": \"Boiler Room founding details\"}\n\n[[ ## observation_2 ## ]]\n[1] \u00abBoiler Room (music project) | Boiler Room is a global online music broadcasting platform commissioning and streaming live music sessions around the world. Founded in London, England in 2010, Boiler Room has now hosted shows in around 100 cities worldwide, from Stockholm to Shanghai. They have regular operations in London, New York City, Berlin, Mexico City, Sydney, S\u00e3o Paulo, Tokyo, Krak\u00f3w, and Los Angeles and produce an average of 30\u201335 new shows each month. Their music programming originally focused on electronic music such as garage, house, techno, dub but quickly expanded to include additional genres, including grime, hip hop, classical, and jazz.\u00bb\n[2] \u00abBoiler Room (band) | Boiler Room was a nu metal band who formed in 1996. The band, featuring vocalist Chris Lino, guitarist Rob Caggiano, bassist James Meselsohn, and drummer Mike Meselsohn toured through their local club scene for several years, building up their material and performance skills. The band broke through on local radio following an opening slot for Orgy in 1999. Original guitarist Joey Barracato played on their first self-titled 1996 CD and played the first couple years of gigs, opening for bands such as Type O Negative, Life of Agony, and Korn.\u00bb\n[3] \u00abJoakim Borda-Pedreira | Joakim Borda (born Joakim Waskar Borda-Pedreira 1977 in Malm\u00f6) is a Swedish-Bolivian art historian, art critic and curator. He has been Art Editor of Plaza Magazine (2007-2011) and is the Founding Director of The Boiler Room Gallery in Oslo. Between 2012-2015 he was Head Curator of The Arts Festival of North Norway. Borda is grandson of the Bolivian poet and politician Hector Borda Lea\u00f1o.\u00bb",
+        "next_thought": "I have confirmed that Boiler Room was founded in London, England in 2010. Since Konnichiwa was launched with a party arranged and broadcast globally by Boiler Room, I now have all the information needed to answer the question.",
+        "next_tool_name": "finish",
+        "next_tool_args": {}
+      },
+      {
+        "question": "In addition to Ryan Gosling, Angourie Rice and the actor born on October 11, 1977, who else starred in The Nice Guys?",
+        "answer": "Russell Crowe"
+      },
+      {
+        "question": "Which publication has been published by a greater number of groups, House Beautiful or Smithsonian?",
+        "answer": "House Beautiful"
+      },
+      {
+        "question": "In what year was the creator of the character that appeared in a series of films directed by Stephen Norrington, Guillermo del Toro and Goyer born?",
+        "answer": "1926"
+      }
+    ],
+    "signature": {
+      "instructions": "Given the fields `question`, produce the fields `answer`.\n\nYou are an Agent. In each episode, you will be given the fields `question` as input. And you can see your past trajectory so far.\nYour goal is to use one or more of the supplied tools to collect any necessary information for producing `answer`.\n\nTo do this, you will interleave next_thought, next_tool_name, and next_tool_args in each turn, and also when finishing the task.\nAfter each tool call, you receive a resulting observation, which gets appended to your trajectory.\n\nWhen writing next_thought, you may reason about the current situation and plan for future steps.\nWhen selecting the next_tool_name and its next_tool_args, the tool must be one of:\n\n(1) search_wikipedia. It takes arguments {'query': {'type': 'string'}} in JSON format.\n(2) finish, whose description is <desc>Marks the task as complete. That is, signals that all infomration for producing the outputs, i.e. `answer`, are now available to be extracted.<\/desc>. It takes arguments {} in JSON format.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Trajectory:",
+          "description": "${trajectory}"
+        },
+        {
+          "prefix": "Next Thought:",
+          "description": "${next_thought}"
+        },
+        {
+          "prefix": "Next Tool Name:",
+          "description": "${next_tool_name}"
+        },
+        {
+          "prefix": "Next Tool Args:",
+          "description": "${next_tool_args}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "extract.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Given the fields `question` and `trajectory`, reason through the information gathered to produce a coherent `answer` based on the accumulated knowledge and interactions. Ensure that the final output reflects the logical steps taken to arrive at the conclusion.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Trajectory:",
+          "description": "${trajectory}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.13",
+      "dspy": "2.6.23",
+      "cloudpickle": "3.1"
+    }
+  }
+}

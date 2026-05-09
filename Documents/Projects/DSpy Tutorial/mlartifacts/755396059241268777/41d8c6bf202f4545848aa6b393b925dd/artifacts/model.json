@@ -1,0 +1,67 @@
+{
+  "react": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Given the fields `question` and `trajectory`, your task is to produce the field `answer`. You are functioning as an intelligent agent that will analyze the `question` and use the `trajectory` of previous thoughts and actions to determine the next steps needed to gather information. You will interleave the following actions in each turn: \n\n1. Formulate a `next_thought` that reflects your reasoning about the current situation and outlines your plan for gathering the necessary information.\n2. Select a `next_tool_name` from the available tools, which can either be `search_wikipedia` or `finish`.\n3. Provide `next_tool_args` that contain the appropriate arguments for the chosen tool.\n\nWhen you choose `search_wikipedia`, ensure that the `query` is relevant to the `question` at hand. If you determine that you have gathered sufficient information to answer the `question`, select `finish` to mark the task as complete. \n\nRemember to maintain a clear and structured approach throughout the process, as this will enhance your ability to retrieve accurate and relevant information effectively.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Trajectory:",
+          "description": "${trajectory}"
+        },
+        {
+          "prefix": "Next Thought:",
+          "description": "${next_thought}"
+        },
+        {
+          "prefix": "Next Tool Name:",
+          "description": "${next_tool_name}"
+        },
+        {
+          "prefix": "Next Tool Args:",
+          "description": "${next_tool_args}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "extract.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Given the fields `question`, produce the fields `answer`.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Trajectory:",
+          "description": "${trajectory}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.13",
+      "dspy": "2.6.23",
+      "cloudpickle": "3.1"
+    }
+  }
+}

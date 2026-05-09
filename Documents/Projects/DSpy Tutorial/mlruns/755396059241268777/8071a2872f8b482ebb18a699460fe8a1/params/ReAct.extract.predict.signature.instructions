@@ -1,0 +1,1 @@
+Given the fields `question` and `trajectory`, reason through the information gathered to produce a coherent `answer` based on the accumulated knowledge and interactions. Ensure that the final output reflects the logical steps taken to arrive at the conclusion.
